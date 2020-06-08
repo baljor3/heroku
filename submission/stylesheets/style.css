@@ -1,0 +1,21 @@
+.block{
+  background-color: Gray;
+  width:25px;
+  height:25px;
+  border-style: solid;
+  cursor: pointer;
+}
+.newblock{
+  background-color: Gray;
+  width:25px;
+  height:25px;
+  border-style: solid;
+  cursor: pointer;
+
+}
+.le{
+  background-color: Gray;
+  width:25px;
+  height:25px;
+  border-style: solid;
+}
