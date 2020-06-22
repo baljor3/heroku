@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./stylesheets/realfun.css">
+    <script type="text/javascript" src="./script.js">
+    </script>
+  </head>
+  <body>
+    <form class ="" action="/adduser" method="post">
+      <label for="fname">id:</label>
+      <input type="text" id="uid" name="uid" ><br><br>
+      <label for="fname">name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="lname">Size:</label>
+      <input type="text" id="Size" name="Size"><br><br>
+      <label for="lname">Height:</label>
+      <input type="text" id="Height" name="Height"><br><br>
+      <label for="lname">type:</label>
+      <input type="text" id="Type" name="Type"><br><br>
+      <input type="submit" name="sub" value="Submit">
+</form>
+<form class ="" action="/delete" method="post">
+  <label for="fname">id:</label>
+  <input type="text" id="uid" name="uid"><br><br>
+  <input type="submit" name="sub" value="delete">
+</form>
+  <form class ="" action="/modify" method="post">
+    <label for="fname">id:</label>
+    <input type="text" id="uid" name="uid"><br><br>
+    <label for="fname">name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="lname">Size:</label>
+    <input type="text" id="Size" name="Size"><br><br>
+    <label for="lname">Height:</label>
+    <input type="text" id="Height" name="Height"><br><br>
+    <label for="lname">type:</label>
+    <input type="text" id="Type" name="Type"><br><br>
+    <input type="submit" name="sub" value="Modify">
+</form>
+<a href="/database">Display names</a>
+</html>

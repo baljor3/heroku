@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="./stylesheets/realfun.css">
+  <script type="text/javascript" src="./script.js">
+  </script>
+</head>
+<body>
+
+
+
+<div class="container">
+<h2>Database Results</h2>
+
+<ul style="float:left">
+    <% results.forEach(function(r) { %>
+        <li style="height: <%= r.height %>px; width: <%= r.size%>px; background-color:<%=r.type%>; float: left;margin: 20px; cursor: pointer" onclick="getname('<%= r.name %>');
+          getheight('<%= r.height %>');getID('<%= r.uid %>');getSize('<%= r.size %>');gettype('<%= r.type %>')"
+          ><%= r.name %></li>
+
+    <% }); %>
+</ul>
+
+<table>
+  <tr>
+    <td>ID</td>
+    <td> Name</td>
+    <td> Height </td>
+    <td> Size</td>
+    <td> type </td>
+  </tr>
+  <tr>
+    <td id ="id"> </td>
+    <td id ="name"> </td>
+    <td id ="height"> </td>
+    <td id ="size"> </td>
+    <td id ="type"> </td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+</html>
